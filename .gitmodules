@@ -1,6 +1,6 @@
 [submodule "app/framework"]
 	path = app/framework
-	url = gitolite@123.56.137.112:framework.git
+	url = git@github.com:zhaoshiling1017/app-framework.git
 [submodule "app/views/tags"]
 	path = app/views/tags
-	url = gitolite@123.56.137.112:tags.git
+	url = git@github.com:zhaoshiling1017/app-tags.git

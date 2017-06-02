@@ -1,0 +1,70 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                                       Application.index
+GET     /main                                   Application.main
+POST    /login                                  Application.login
+
+
+#接口
+#角色管理
+GET   /roles                                    security.Roles.index
+GET   /role/new                                 security.Roles.add
+POST  /role                                     security.Roles.create
+GET   /role/{id}/edit                           security.Roles.edit
+PUT   /role/{id}                                security.Roles.update
+DELETE /role/{id}                               security.Roles.destroy  
+GET   /role/{id}                                security.Roles.show
+
+#区域信息
+GET    /region/city							    security.Regions.cities
+
+#用户管理
+GET   /users                                    security.Users.index
+GET   /user/new                                 security.Users.add
+POST  /user                                     security.Users.create
+GET   /user/{id}/edit                           security.Users.edit
+PUT   /user/{id}                                security.Users.update
+DELETE /user/{id}                               security.Users.destroy  
+GET   /user/{id}                                security.Users.show
+
+
+#下载管理
+GET				/download/self							Tasks.one
+GET				/download/all							Tasks.all
+GET				/download/{id}							Tasks.download
+DELETE				/download/deleteAll/{id}			Tasks.destory
+DELETE				/download/deleteOne/{id}			Tasks.del
+#JOB管理
+GET    /jobManages                                   resource.JobManages.index
+GET    /jobManage/new                      			 resource.JobManages.add
+POST   /jobManage                          			 resource.JobManages.create
+GET    /jobManage/{id}/edit                          resource.JobManages.edit
+PUT    /jobManage/{id}                               resource.JobManages.update
+GET    /jobManage/{id}                               resource.JobManages.show
+DELETE  /jobManage/del                               resource.JobManages.del 
+GET    /jobManage/{id}/start                         resource.JobManages.start
+GET    /jobManage/{id}/stop                          resource.JobManages.stop
+
+
+#AutoComplete
+GET				/auto/queryActiveUsers					AutoComplete.queryActiveUser
+
+#iptables管理
+GET								/ipManager								em.IPTables.index
+GET								/iptables/new						em.IPTables.add
+POST							/iptables/new						em.IPTables.create
+GET								/iptables/{id}/edit				em.IPTables.edit
+PUT								/iptables/{id}/						em.IPTables.update
+GET								/iptables/{id}/show			em.IPTables.show
+DELETE						/iptables/{id}/delete			em.IPTables.destory
+
+GET     /favicon.ico                            staticFile:/public/images/favicon.ico                                
+
+# Map static resources from the /app/public folder to the /public path
+GET     /public/                                staticDir:public
+
+# Catch all
+*       /{controller}/{action}                  {controller}.{action}

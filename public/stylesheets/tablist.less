@@ -1,0 +1,318 @@
+@import "var.less";
+@import "mixins.less";
+
+.show_tab{
+	width:100%;
+	th,td{
+		line-height: 24px;
+		padding: 8px;
+		border: 1px solid @bor_c5;
+		text-align: center;
+	}
+	.text_l{
+		text-align:left;
+	}
+}
+.showTab2{
+	
+	text-align: center;
+	width: 100%;
+	th,td{
+		line-height: 14px;
+		padding: 12px 0;
+		border: 2px solid #fff;
+		text-align: center;
+	}
+}
+.showTab3{
+	width: 100%;
+	th,td{
+		padding:9px 0;
+		color: @font_c3;
+		text-align: center;
+	}
+}
+.showTab4{
+	width: 100%;
+	th,td{
+		border: 1px solid @bor_c5;
+		padding:6px 0;
+		color: @font_c3;
+		line-height: 26px;
+		text-align: center;
+	}
+}
+.form_tab{
+	width: 100%;
+	th,td{
+		padding: 12px 0;
+		color: @font_c3;
+	}
+	td{
+		padding-left:8px;
+		padding-right:8px;
+	}
+}
+.form_tab2{
+	width: 100%;
+	th,td{
+		padding: 8px 0;
+		color: @font_c3;
+	}
+	td{
+		padding-left:8px;
+		padding-right:8px;
+	}
+}
+.role_tab{
+	th,td{
+		padding: 6px 0;
+		color: @font_c3;
+	}
+}
+.text_r{
+	text-align: right;
+}
+.text_c{
+	text-align: center;
+}
+.input_text{
+	position: relative;
+	display: inline-block;
+	border: 1px solid @bor_c4;
+	width:100%;
+	input{
+		line-height: 32px\9;
+		height:32px;
+		border: none;
+		background: none;
+		width:100%;
+	}
+	.cander{
+		position: absolute;
+		top:8px;
+		right:8px;
+	}
+}
+.edit_input{
+	display: block;
+	width: inherit;
+	input{
+		line-height: 18px;
+		height:18px;
+	}
+}
+.section_input_text{
+	width:20.6%;
+	background: #fff;
+	margin-right: 12px;
+	input{
+		line-height: 26px;
+		height:26px;
+		border: none;
+		background: none;
+		width:100%;
+		color: @font_c3;
+	}
+}
+.input_select{
+	display: inline-block;
+	border: 1px solid @bor_c4;
+	width:100%;
+	text-indent: 0;
+	padding-top: 8px;
+	height:24px;
+	select{
+		
+		border: none;
+		background: none;
+		width: 100%;
+	}
+}
+.input_radio{
+	input,em{
+		float:left;
+		height:30px;
+		line-height: 30px;
+		margin-right: 12px;
+	}
+	em{
+		padding: 0 19px;
+		border: 1px solid @bor_c12;
+	}
+	.hover{
+		background:  url(../images/heighbor.png) no-repeat;
+	}
+	.Bhover{
+		background:  url(../images/heighborB.png) no-repeat;
+	}
+}
+.select_60{
+	border: none;
+	select{
+		width: 60%;
+	}
+}
+.input_textarea{
+	display: inline-block;
+	border: 1px solid @bor_c4;
+	width:100%;
+	overflow: hidden;
+	height: 40px;
+	background:@bj_c13;
+	textarea{
+		width:99%;
+		height: 100%;
+		resize:none;
+		background: none;
+		border: none;
+	}
+}
+.input_textarea_noB{
+	background:none;
+}
+.input_check{
+	display: inline-block;
+	overflow: hidden;
+	height: 20px;
+	line-height: 20px;
+	em{
+		float: left;
+		font-style: normal;
+	}
+	input{
+		float: left;
+		line-height: 20px;
+		height:20px;
+		border: none;
+		background: none;
+		margin: 0 5px;
+	}
+	.suffix{
+		float: left;
+		font-style:normal;
+		color: #808080;
+	}
+}
+.userGroup{
+	padding-top: 0;
+	height:100px;
+	background: #fff;
+	border: 1px solid @bor_c4;
+	overflow-y: auto;
+	float:left;
+}
+.user_direct{
+	float:left;
+	width:200px;
+}
+.required, .error{
+	color: @font_c4;
+}
+.tr_bor{
+	border-left: 1px solid @bor_c4;
+	border-right: 1px solid @bor_c4;
+}
+.tr_borT{
+	border-top: 1px solid @bor_c4;
+}
+.tr_borB{
+	border-bottom: 1px solid @bor_c4;
+}
+.input_bot_bor{
+	border: none;
+	border-bottom:1px solid @bor_c4;
+}
+.textarea_198{
+	height: 198px;
+}
+
+.textarea_160{
+	height: 160px;
+}
+
+.textarea_120{
+	height: 120px;
+}
+
+.textarea_100{
+	height: 100px;
+}
+
+.textarea_60{
+	height: 60px;
+}
+
+.tab_394{
+	width: 394px;
+}
+.tr_bg{
+	background: @bj_c9;
+}
+.bg0{
+	background: #fff;
+}
+.bg1{
+	background: @bj_c10;
+}
+.mar_8{
+	margin-left: 8px;
+}
+.input_80{
+	width:80%;
+}
+.input_70{
+	width:70%;
+}
+
+.input_15{
+	width:15%;
+}
+
+.select_15{
+	width:15%;
+}
+.td_5{
+	width:5%;
+}
+.td_8{
+	width:8%;
+}
+.td_10{
+	width:10%;
+}
+.td_18{
+	width:18%;
+}
+.td_20{
+	width:23%;
+}
+.td_25{
+	width:25%;
+}
+.td_30{
+	width:30%;
+}
+.td_32{
+	width:32.6%;
+}
+.td_35{
+	width:33.5%;
+}
+.td_40{
+	width:40%;
+}
+.td_45{
+	width:45%;
+}
+
+.td_50{
+	width:50%;
+}
+.p_float{
+	float:left;
+	margin-right: 50px;
+}
+.opera_float{
+	float: left;
+}

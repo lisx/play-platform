@@ -1,0 +1,16 @@
+.classpath
+.project
+.settings/
+eclipse/
+modules/
+test/
+conf/application.conf
+conf/log4j.properties
+tmp/
+public/accounts/
+.DS_Store
+dump.rdb
+logs/
+server.pid
+.idea/
+volunteer-platform.iml

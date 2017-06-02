@@ -1,0 +1,26 @@
+roleType:
+ - {K: 'platform', V: '后台管理'}
+ifUse:
+ - {K: '0', V: '禁用'}
+ - {K: '1', V: '启用'}
+ifSystem:
+ - {K: '0', V: '否'}
+ - {K: '1', V: '是'}
+taskStatus:
+ - {K: 'READY', V: '等待下载'}
+ - {K: 'BEGIN', V: '开始下载'}
+ - {K: 'COMPLETE', V: '下载完成'}
+ - {K: 'ERROR', V: '下载失败'}
+yesOrNo:
+ - {K: '1', V: '是'}
+ - {K: '0', V: '否'}
+noOrYes:
+ - {K: '0', V: '否'}
+ - {K: '1', V: '是'}
+reportType:
+ - {K: '3', V: '日报'}
+ - {K: '2', V: '月报'}
+ - {K: '1', V: '年报'}
+auditResult:
+ - {K: 'failAudit',V: '未通过'}
+ - {K: 'succAudit',V: '通过'}

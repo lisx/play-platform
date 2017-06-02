@@ -1,0 +1,4 @@
+# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+validation.invalid=请输入合法的数字

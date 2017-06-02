@@ -1,0 +1,6 @@
+store: redis
+storeFix: 'RESOURCE.'
+resourceDic: 'RESOURCE_DIC.'
+actionDic: 'ACTION_DIC.'
+resources: 'RESOURCES'
+actions: 'ACTIONS'

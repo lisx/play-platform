@@ -1,0 +1,95 @@
+//清浮动
+.clearfix() {
+	zoom:1;
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+  }
+  &:after {
+    clear: both;
+  }
+}
+//占位
+.size(@w,@h) {
+  width: @w;
+  height: @h;
+}
+//透明
+.opacity(@opacity) {
+  opacity: @opacity;
+  // IE8 filter
+  @opacity-ie: (@opacity * 100);
+  filter: ~"alpha(opacity=@{opacity-ie})";
+}
+//宽高100%
+.filed(){
+	width:100%;
+	height:100%;
+}
+.filed_w(){
+	width:100%;
+}
+.filed_h(){
+	height:100%;
+}
+//定位
+.pos_abs(){
+	position:absolute;
+}
+/*自适应高度*/
+.auto_abs(@top1,@top2)when(@top1=129px),(@top2= 73px){
+      position:absolute;
+      top:@top1;
+      bottom: @top2;
+}
+
+.pos_re(){
+	position:relative;
+}
+.pos_fix(){
+	position:fixed;
+	_position:absolute;
+}
+//最小高度
+.min_h(@h){
+	min-height: @h;
+	_height:@h;
+}
+.min_w(@w){
+  min-width: @w;
+  _width:@w;
+}
+.backG(@nor,@ie6,@r:repeat,@p:0 0){
+	background:@nor @r @p;
+	_background:@ie6 @r @p;
+}
+.text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.box_shadow(@box_shadow){
+  -webkit-box-shadow: @box_shadow;
+  -moz-box-shadow   :@box_shadow;
+  box-shadow        : @box_shadow;
+}
+.border-radius(@radius){
+    -webkit-border-radius: @radius;
+  -moz-border-radius   : @radius;
+  border-radius        : @radius;
+}
+.border-bottom-radius(@radius) {
+   -webkit-border-bottom-left-radius : @radius;
+  -webkit-border-bottom-right-radius: @radius;
+  -moz-border-radius-bottomleft : @radius;
+  -moz-border-radius-bottomright: @radius;
+  border-bottom-left-radius : @radius;
+  border-bottom-right-radius: @radius;
+}
+//border 透明
+.bor_opacity(){
+  border-color:transparent;
+  _border-color:white;
+  _filter:chroma(color=white);
+}

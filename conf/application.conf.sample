@@ -1,0 +1,25 @@
+application.name=play-platform
+#Log level
+application.log=INFO
+application.log.path=/log4j.properties
+application.log.system.out=on
+#http.exposePlayServer=false
+#应用启动模式  prod dev
+application.mode=dev
+application.secret=JaeKZgzPstnvmJHjflGoS6fSu3ri1m579ZQyO0k2Qj7ypIGI4YAhXNEiQ8ydwRJk
+date.format=yyyy-MM-dd
+#mysql数据库配置
+db=mysql://root:bjiamcall@127.0.0.1:3306/playdb
+hibernate.ejb.naming_strategy=framework.base.DBNamingStrategy
+attachments.path=data/attachments
+jpa.ddl=none
+http.port=9999
+redis.url=redis://127.0.0.1:6379
+XForwardedSupport=127.0.0.1
+security.resource.modify=true
+security.resource.rootMenuLen=3
+security.resource.config=resources/config.yml
+security.app.em=em
+security.app.platform=platform
+#是否启动定时任务
+manager.job.ifRun=0

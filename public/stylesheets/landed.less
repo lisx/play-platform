@@ -1,0 +1,106 @@
+@import "reset.less";
+@import "mixins.less";
+@import "var.less";
+/* 登陆界面 */
+.landed_bj{
+  background: @bj_c1;
+  width:100%;
+  position:relative;
+}
+.landed{
+	position: absolute;
+	width:473px;
+	height:333px;
+	left: 50%;
+	top:50%;
+	margin: -166px 0 0 -236px;
+      background: #fff;
+}
+.land_log{
+	height: 98px;
+	// background: @bor_c1 url(../images/land_log.png) no-repeat 0px 18px;
+   background-color: @bj_c42;
+      position: relative;
+}
+.termSort{
+  position: absolute;
+  width:34px;
+  height:32px;
+  top:32px;
+  right: 32px;
+  background:url(../images/sort_icon.png) no-repeat;
+}
+.in_text{
+      padding:0 53px;
+      height:267px;
+}
+.in_text li{
+	height:41px;
+	background: #fff;
+	margin:5px 0;
+      width:352px;
+      border: 1px solid @bor_c18;
+      padding:13px 0 0 13px;
+}
+.in_text li.error{
+  width:245px;
+  height: 39px;
+  border: 1px solid @bj_c41;
+  line-height: 16px;
+  padding:9px 102px 0 18px;
+  display: none;
+  color:@bj_c41;
+  background: @bj_c43;
+}
+.in_text li em,.in_text li input{
+  float: left;
+}
+.in_text li em{
+   width: 24px;
+  height:29px;
+  margin-right: 8px;
+}
+.user_icon{
+  background: url(../images/user_icon.png) no-repeat;
+}
+.pass_icon{
+  background: url(../images/pass_icon.png) no-repeat;
+}
+.in_text li.land{
+  width: 367px;
+  border:0;
+  padding:0;
+  height: 52px;
+  background: @bor_c1;
+  line-height: 52px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+}
+.in_text li.land input {
+  padding: 0;
+  width: 100%;
+  height:100%;
+  .opacity(0);
+  .pos_abs();
+  top:0;
+  left:0;
+   cursor: pointer;
+}
+.in_text li input{
+      width:306px;
+	height:26px;
+	border: none;
+	background: none;
+	outline: none;
+      line-height: 26px;
+}
+
+.inp_txt{
+  color: #b4b4b4;
+}
+
+.inp_txt_active{
+  color: #000;
+}

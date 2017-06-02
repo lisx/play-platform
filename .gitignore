@@ -13,4 +13,5 @@ dump.rdb
 logs/
 server.pid
 .idea/
-volunteer-platform.iml
+play-platform.iml
+

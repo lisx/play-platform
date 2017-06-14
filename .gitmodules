@@ -1,6 +1,6 @@
 [submodule "app/framework"]
 	path = app/framework
-	url = git@github.com:zhaoshiling1017/app-framework.git
+	url = git@github.com:lisx/play-framework.git
 [submodule "app/views/tags"]
 	path = app/views/tags
-	url = git@github.com:zhaoshiling1017/app-tags.git
+	url = git@github.com:lisx/play-tags.git
